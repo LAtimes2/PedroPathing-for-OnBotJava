@@ -1,6 +1,6 @@
 package com.pedropathing.telemetry;
 
-import org.jetbrains.annotations.NotNull;
+///import org.jetbrains.annotations.NotNull;
 
 public final class Item<T> extends Selectable<T> {
 
@@ -12,7 +12,8 @@ public final class Item<T> extends Selectable<T> {
      * @param name the name of the item
      * @param value the value of the item
      */
-    public Item(@NotNull String name, @NotNull T value) {
+///    public Item(@NotNull String name, @NotNull T value) {
+    public Item(String name, T value) {
         super(name);
         this.value = value;
     }

@@ -1,6 +1,6 @@
 package com.pedropathing.telemetry;
 
-import org.jetbrains.annotations.NotNull;
+///import org.jetbrains.annotations.NotNull;
 
 /**
  * An item that can be selected
@@ -13,7 +13,7 @@ public abstract class Selectable<T> {
     /**
      * The name of the {@link Selectable}. Shown in the select menu.
      */
-    @NotNull
+///    @NotNull
     public final String name;
 
     /**
@@ -21,7 +21,8 @@ public abstract class Selectable<T> {
      *
      * @param name the name of the selectable
      */
-    Selectable(@NotNull String name) {
+///    Selectable(@NotNull String name) {
+    Selectable(String name) {
         this.name = name;
     }
 }
