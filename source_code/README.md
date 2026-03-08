@@ -13,7 +13,6 @@ A quick explanation of jar files: A .jar file in this instance is just a .zip fi
 A general overview of building the jar file: The current .java files are renamed from src to src\_orig. The PedroPathing .java files are uploaded to OnBotJava and built. The build process creates a .jar file with the .class files. The .jar file is copied off of the Control Hub and possibly edited. The PedroPathing .java files are deleted and the original files renamed from src\_orig back to src.
 
 
-
 Instructions for building jar file:
 
 1. You will need to connect this computer to the Control Hub via a USB cable to copy files to and from the Control Hub
@@ -26,9 +25,9 @@ Instructions for building jar file:
    b. Create FIRST\\java\\src\\com\\pedropathing folder
 5. Using file explorer, copy the GitHub files from source_code to FIRST\\java\\src\\com\\pedropathing
 6. Restart OnBotJava to load the copied files (select Manage, then OnBotJava)
-6. In OnBotJava, build the java files. There should not be any errors
-7. In the file explorer, go to FIRST\\java\\build\\jars
-8. There may be multiple folders starting with onBotJavaJars. Open the one with the latest date/time.
-9. Copy OnBotJava.jar to the PC
-10. On the PC, rename OnBotJava.jar to pedroPathing.jar
-11. In FIRST\\java, delete src and rename src_orig back to src
+7. In OnBotJava, build the java files. There should not be any errors
+8. In the file explorer, go to FIRST\\java\\build\\jars
+9. There may be multiple folders starting with onBotJavaJar. Open the one with the latest date/time.
+10. Copy OnBotJava.jar to the PC
+11. On the PC, rename OnBotJava.jar to PedroPathing.jar
+12. In FIRST\\java, delete src and rename src_orig back to src
