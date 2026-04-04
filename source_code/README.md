@@ -2,7 +2,7 @@
 
 
 
-This folder contains the source code used to create the PedroPathing.jar file. It is a slightly modified version of the files from the [PedroPathing](https://github.com/Pedro-Pathing/PedroPathing), [Telemetry](https://github.com/Pedro-Pathing/Telemetry) and [QuickStart](https://github.com/Pedro-Pathing/Quickstart) repositories.
+This folder contains the source code used to create the PedroPathing.jar file. It is a slightly modified version of the files from the [PedroPathing](https://github.com/Pedro-Pathing/PedroPathing), [Telemetry](https://github.com/Pedro-Pathing/Telemetry) and [QuickStart](https://github.com/Pedro-Pathing/Quickstart) repositories. Modifications include removing imports of org.jetbrains.annotations.NotNull.
 
 
 
@@ -18,16 +18,21 @@ Instructions for building jar file:
 1. You will need to connect this computer to the Control Hub via a USB cable to copy files to and from the Control Hub
 2. Make a backup of any .java files on the Control Hub that you want to keep, just in case
    (they should be preserved, but things can go wrong. Also, there are backups on the Control Hub at This PC\\Control Hub v1.0\\Internal shared storage\\FIRST\\java\\srcBackups)
-3. On the Control Hub, rename This PC\\Control Hub v1.0\\Internal shared storage\\FIRST\\java src to src\_orig
-4. Create the directory structure using 1 of the following:
-   a. Upload a file such as DriveTrain.java to OnBotJava using the Web browser and build it (ignore any errors)
+3. Close any connections in the Web browser to OnBotJava
+4. On the Control Hub, rename This PC\\Control Hub v1.0\\Internal shared storage\\FIRST\\java src to src\_orig
+5. You can re-open OnBotJava any time after this
+6. If you have PedroPathing.jar loaded in OnBotJava under ExternalLibraries, delete it 
+6. Create the directory structure using 1 of the following:
+   a. Upload a file such as ErrorCalculator.java to OnBotJava using the Web browser and build it (ignore any errors)
    or
    b. Create FIRST\\java\\src\\com\\pedropathing folder
-5. Using file explorer, copy the GitHub files from source_code to FIRST\\java\\src\\com\\pedropathing
-6. Restart OnBotJava to load the copied files (select Manage, then OnBotJava)
-7. In OnBotJava, build the java files. There should not be any errors
-8. In the file explorer, go to FIRST\\java\\build\\jars
-9. There may be multiple folders starting with onBotJavaJar. Open the one with the latest date/time.
-10. Copy OnBotJava.jar to the PC
-11. On the PC, rename OnBotJava.jar to PedroPathing.jar
-12. In FIRST\\java, delete src and rename src_orig back to src
+7. Using file explorer, copy the GitHub files from source_code to FIRST\\java\\src\\com\\pedropathing
+8. Restart OnBotJava to load the copied files (select Manage, then OnBotJava)
+9. In OnBotJava, build the java files. There should not be any errors
+10. In the file explorer, go to FIRST\\java\\build\\jars
+11. There may be multiple folders starting with onBotJavaJar. Open the one with the latest date/time.
+12. Copy OnBotJava.jar to the PC
+13. On the PC, rename OnBotJava.jar to PedroPathing.jar
+14. Close OnBotJava (go to Manage tab)
+15. In FIRST\\java, delete src and rename src_orig back to src
+16. You will have to upload the new PedroPathing.jar file into OnBotJava
