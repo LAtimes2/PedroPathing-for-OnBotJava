@@ -17,5 +17,5 @@ Instructions:
 
 
 
-This version of PedroPathing.jar is version 2.0.6. See the source\_code folder for the PedroPathing code in the jar file and instructions on how to rebuild the jar file for newer versions.
+This version of PedroPathing.jar is version 2.1.1. See the source\_code folder for the PedroPathing code in the jar file and instructions on how to rebuild the jar file for newer versions.
 
