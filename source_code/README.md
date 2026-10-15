@@ -13,10 +13,22 @@ A quick explanation of jar files: A .jar file in this instance is just a .zip fi
 A general overview of building the jar file: The current .java files are renamed from src to src\_orig. The PedroPathing .java files are uploaded to OnBotJava and built. The build process creates a .jar file with the .class files. The .jar file is copied off of the Control Hub and possibly edited. The PedroPathing .java files are deleted and the original files renamed from src\_orig back to src.
 
 
+
+If the updated source code is not in this directory, do the following:
+
+1. Copy all directories in PedroPathing repository core\src\main\java\com\pedropathing directory to this directory.
+2. Copy revhub directory in PedroPathing repository revhub\src\main\java\com\pedropathing directory to this directory.
+3. Copy Tuning directory in Autotune repository AutoTune\tree\main\Tuning\src\main\java\com\pedropathing directory to this directory
+4. Copy telemetry directory in Telemetry repository telemetry\src\main\java\com\pedropathing directory to this directory. Need to comment out references to NotNull.
+5. Copy Constants.java and Tuning.java from QuickStart repository to directory above this one (PedroPathing-for-OnBotJava)
+6. If update needed, copy NanoIdUtils.java in jnanoid repository (https://github.com/aventrix/jnanoid) to FIRST\java\src\com\aventrix\jnanoid\jnanoid [or upload via OnBotJava]
+7. repo.dairy.foundation/@/releases/dev/frozenmilk/Sinister. choose latest version (2.3.0). download Sinister-x.x.x.jar
+
+
 Instructions for building jar file:
 
 1. You will need to connect this computer to the Control Hub via a USB cable to copy files to and from the Control Hub
-2. Make a backup of any .java files on the Control Hub that you want to keep, just in case
+2. Make a backup of any .java files on the Control Hub that you want to keep, just in case (Download via OnBotJava)
    (they should be preserved, but things can go wrong. Also, there are backups on the Control Hub at This PC\\Control Hub v1.0\\Internal shared storage\\FIRST\\java\\srcBackups)
 3. Close any connections in the Web browser to OnBotJava
 4. On the Control Hub, rename This PC\\Control Hub v1.0\\Internal shared storage\\FIRST\\java src to src\_orig
@@ -31,7 +43,7 @@ Instructions for building jar file:
 9. In OnBotJava, build the java files. There should not be any errors
 10. In the file explorer, go to FIRST\\java\\build\\jars
 11. There may be multiple folders starting with onBotJavaJar. Open the one with the latest date/time.
-12. Copy OnBotJava.jar to the PC
+12. Copy OnBotJava.jar to the PC in the PedroPathing-for-OnBotJava directory
 13. On the PC, rename OnBotJava.jar to PedroPathing.jar
 14. Close OnBotJava (go to Manage tab)
 15. In FIRST\\java, delete src and rename src_orig back to src
