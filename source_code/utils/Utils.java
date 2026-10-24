@@ -5,6 +5,7 @@
 package com.pedropathing.utils;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collector;
@@ -75,7 +76,12 @@ public final class Utils {
     public static <T> List<T> concat(List<T> lhs, List<T> rhs) {
         if (lhs.isEmpty()) return rhs;
         if (rhs.isEmpty()) return lhs;
-        return Stream.concat(lhs.stream(), rhs.stream()).collect(toUnmodifiableList());
+/// this line generates a Class Not Found error for Ljava/util/stream/Stream$-CC (jdk8 desugar varsion issue?).
+/// Workaround is to concat it manually.
+///        return Stream.concat(lhs.stream(), rhs.stream()).collect(toUnmodifiableList());
+List<T> combined = new ArrayList<T>(lhs);
+combined.addAll(rhs);
+return combined;
     }
 
     public static double[] linearFit(Double[] x, Double[] y) {
