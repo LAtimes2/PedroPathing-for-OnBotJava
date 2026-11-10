@@ -1,10 +1,8 @@
 # PedroPathing Source Code
 
-# Needs to be updated for PedroPathing3 !!!
 
 
-
-This folder contains the source code used to create the PedroPathing.jar file. It is a slightly modified version of the files from the [PedroPathing](https://github.com/Pedro-Pathing/PedroPathing), [Telemetry](https://github.com/Pedro-Pathing/Telemetry) and [QuickStart](https://github.com/Pedro-Pathing/Quickstart) repositories. Modifications include removing imports of org.jetbrains.annotations.NotNull.
+This folder contains the source code used to create the PedroPathing.jar file. It is a slightly modified version of the files from the [PedroPathing](https://github.com/Pedro-Pathing/PedroPathing), Revhub, [Telemetry](https://github.com/Pedro-Pathing/Telemetry) and Ivy repositories. Modifications include ?.
 
 
 
@@ -20,11 +18,10 @@ If the updated source code is not in this directory, do the following:
 
 1. Copy all directories in PedroPathing repository core\\src\\main\\java\\com\\pedropathing directory to this directory.
 2. Copy revhub directory in PedroPathing repository revhub\\src\\main\\java\\com\\pedropathing directory to this directory.
-3. Copy Tuning directory in Autotune repository AutoTune\\tree\\main\\Tuning\\src\\main\\java\\com\\pedropathing directory to this directory
-4. Copy telemetry directory in Telemetry repository telemetry\\src\\main\\java\\com\\pedropathing directory to this directory. Need to comment out references to NotNull.
-5. Copy Constants.java and Tuning.java from QuickStart repository to directory above this one (PedroPathing-for-OnBotJava)
-6. If update needed, copy NanoIdUtils.java in jnanoid repository (https://github.com/aventrix/jnanoid) to FIRST\\java\\src\\com\\aventrix\\jnanoid\\jnanoid \[or upload via OnBotJava]
-7. repo.dairy.foundation/@/releases/dev/frozenmilk/Sinister. choose latest version (2.3.0). download Sinister-x.x.x.jar
+3. Copy telemetry directory in Telemetry repository telemetry\\src\\main\\java\\com\\pedropathing directory to this directory. Need to comment out references to NotNull.
+4. Copy Constants.java and Tuning.java from QuickStart repository to directory above this one (PedroPathing-for-OnBotJava)
+5. If update needed, copy NanoIdUtils.java in jnanoid repository (https://github.com/aventrix/jnanoid) to FIRST\\java\\src\\com\\aventrix\\jnanoid\\jnanoid \[or upload via OnBotJava]
+6. repo.dairy.foundation/@/releases/dev/frozenmilk/Sinister. choose latest version (2.3.0). download Sinister-x.x.x.jar
 
 
 

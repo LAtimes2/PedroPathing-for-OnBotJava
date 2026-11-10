@@ -8,24 +8,32 @@ This repository provides files that can be uploaded to OnBotJava on an FTC Contr
 
 ## NOTE: PedroPathing version 3
 
-PedroPathing 3 changes how tuning works, using a web page. This is not working with OnBotJava yet, so there are 3 options:
-
-1. Do your tuning using Android Studio QuickStart project, and copy the Constants.java file to OnBotJava
-2. Manual tuning similar to version 2. If you are using Pinpoint, there is a Constants.java\_pinpoint that can be renamed to Constants.java as a starting point, but at a minimum the podOffset and podDirction parameters will need to be updated.
-3. Use PedroPathing version 2, which can be downloaded by selecting Release v2.1.1 on the right hand side
+PedroPathing 3 changes how tuning works, using a web page. This is not working with OnBotJava yet (ever?), so there are 2 options:
 
 
 
+1. Do your tuning using OnBotJava (currently only supports Mecanum drivetrain, Pinpoint localizer and Foresight algorithm. More localizers coming soon). Follow the instructions in the Tuning folder in Tuning Instructions.pdf
+2. Do your tuning using Android Studio QuickStart project, and copy the Constants.java file to OnBotJava
 
 
-PedroPathing is usually used in Android Studio, but sometimes a team may want to use OnBotJava instead. The OnBotJava version is the same as the Android Studio version except that Tuning has been removed (since I haven't figured out how to implement kotlin and WebServer in OnBotJava).
+
+PedroPathing is usually used in Android Studio, but sometimes a team may want to use OnBotJava instead. The OnBotJava version is the same as the Android Studio version except that Tuning is done differently (since I haven't figured out how to implement kotlin and WebServer in OnBotJava).
 
 
 
 Instructions:
 
-1. Upload 2 files from this directory to OnBotJava (PedroPathing.jar, Constants.java)
-2. Follow the instructions for PedroPathing. Files from the Visualizer can be used for paths.
+
+
+1. Perform PedroPathing tuning to create your Constants.java file in the pedro folder in OnBotJava
+2. Upload the PedroPathing.jar file from this directory to OnBotJava
+3. Follow the instructions for PedroPathing at https://pedropathing.com/docs/pathing/guide/setting-up-auto. Files from the Visualizer (https://visualizer.pedropathing.com/) can be used for paths.
+
+
+
+If there are any problems with the documentation on how to do this, you can add an issue in GitHub here: https://github.com/LAtimes2/PedroPathing-for-OnBotJava/issues
+
+
 
 
 
